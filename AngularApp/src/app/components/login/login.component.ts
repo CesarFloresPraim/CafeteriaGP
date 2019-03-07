@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { LoginService } from '../../modelService/login.service';
+import { User } from '../../modelService/user.model';
+import { NgForm } from '@angular/forms';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css'],
+  providers: [LoginService]
+})
+export class LoginComponent implements OnInit {
+  username: string;
+  password: string;
+  constructor(private loginService: LoginService) { }
+
+  ngOnInit() {
+  }
+
+  onSubmit() {
+    console.log(this.username);
+    // this.loginService.getUserDetails(username, password);
+  }
+}
