@@ -7,6 +7,6 @@ var User = mongoose.model('user', {
     password: { type: String},
     email: { type: String},
     type: { type: String}
-}, 'users');
+}, 'Users');
 
 module.exports = { User };
