@@ -2,40 +2,37 @@ const express = require('express');
 const router = express.Router();
 const ObjectId= require('mongoose').Types.ObjectId;
 
-var { User } = require('../models/user');
+var { Provider } = require('../models/provider');
 
 //Route to save user
 router.post('/', (req, res) => {
-    let user = new User({
+    let provider = new Provider({
         name: req.body.name,
-        lastname: req.body.lastname,
-        username: req.body.username,
+        contact: req.body.contact,
+        telephone: req.body.telephone,
         email: req.body.email,
-        password: req.body.password,
-        type: req.body.type
+        rfc: req.body.rfc,
+        postalCode: req.body.postalCode,
+        street: req.body.street,
+        number: req.body.number,
+        streetAddress: req.body.streetAddress,
+        settlement:req.body.settlement
     });
-    user.save((err,doc) => {
+    provider.save((err,doc) => {
         if (!err) { res.send(doc); }
-        else { console.log('Error in Employee Save :' + JSON.stringify(err, undefined, 2)); }
+        else { console.log('Error in Provider Save :' + JSON.stringify(err, undefined, 2)); }
     });
 });
-//Route to get user
-router.post('/:username', (req, res) => {
-    User.findOne({username: req.params.username }, (err, doc) => {
+//Route to get provider
+router.get('/:name', (req, res) => {
+    Provider.findOne({name: req.params.name }, (err, doc) => {
         if(doc){
-            if(doc.password === req.body.password){
                 res.send({
-                    username: doc.username,
-                    name: doc.name,
-                    lastname: doc.lastname,
-                    _id: doc._id
+                    name: doc.name
                 });
-            } else {
-                res.status(400).send('Wrong username/password');
-            }
         } else {
-            console.log('Error retreiving user: ' + JSON.stringify(err, undefined, 2));
-            res.status(400).send('Wrong username/password');
+            console.log('Error retreiving provider: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Wrong name');
         }
     })
 });
@@ -43,17 +40,17 @@ router.post('/:username', (req, res) => {
 router.put('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
-    let user = {
+    let provider = {
         name: req.body.name,
-        lastname: req.body.lastname,
-        username: req.body.username,
-        password: req.body.password
+        type: req.body.type,
+        description: req.body.type,
+        price: req.body.price
     };
-    User.findByIdAndUpdate(req.params.id, { $set: user}, {new: true}, (err, doc) => {
+    Provider.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {
         if(!err){
             res.send(doc);
         } else {
-            console.log('Error updating user: ' + JSON.stringify(err, undefined, 2));
+            console.log('Error updating provider: ' + JSON.stringify(err, undefined, 2));
         }
     });
 });
@@ -61,11 +58,11 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
-    User.findByIdAndRemove(req.params.id, (err, doc) => {
+    Provider.findByIdAndRemove(req.params.id, (err, doc) => {
         if(!err){
             res.send(doc);
         } else {
-            console.log('Error deleting user: ' + JSON.stringify(err, undefined, 2));
+            console.log('Error deleting provider: ' + JSON.stringify(err, undefined, 2));
         }
     });
 });
