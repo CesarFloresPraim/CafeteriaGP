@@ -5,6 +5,6 @@ var Product = mongoose.model('product', {
     type: { type: String},
     description: { type: String},
     price: {type: Number}
-}, 'Products');
+}, 'products');
 
 module.exports = { Product };

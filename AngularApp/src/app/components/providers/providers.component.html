@@ -1,0 +1,29 @@
+<form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
+  <input type="text" placeholder="name" name="name" #name="ngModel" [(ngModel)]="productService.newProduct.name">
+  <input type="text" placeholder="description" name="description" #description="ngModel" [(ngModel)]="productService.newProduct.description">
+  <input type="text" placeholder="price" name="price" #price="ngModel" [(ngModel)]="productService.newProduct.price">
+  <select name="type" #type="ngModel" [(ngModel)]="productService.newProduct.type">
+    <option value="carnes">carnes</option>
+    <option value="bla">bla</option>
+    <option value="adfadsf">adfadsf</option>
+    <option value="ffd">ffd</option>
+    <option value="ugrs">ugrs</option>
+  </select>
+  <button type="submit">Add+</button>
+</form>
+<br>
+<table id="bootstrap-data-table" class="table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>U/D</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+

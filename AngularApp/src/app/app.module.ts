@@ -7,13 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { MaincafeComponent } from './components/maincafe/maincafe.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProvidersComponent } from './components/providers/providers.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MaincafeComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductComponent,
+    ProvidersComponent
   ],
   imports: [
     BrowserModule,

@@ -25,7 +25,7 @@ router.post('/:username', (req, res) => {
                     name: doc.name
                 });
         } else {
-            console.log('Error retreiving user: ' + JSON.stringify(err, undefined, 2));
+            console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
             res.status(400).send('Wrong username/password');
         }
     })

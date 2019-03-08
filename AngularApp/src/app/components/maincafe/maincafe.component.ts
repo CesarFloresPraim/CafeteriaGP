@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MaincafeService} from '../../modelService/maincafe.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-maincafe',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaincafeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private maincafeService: MaincafeService) { }
 
   ngOnInit() {
   }
 
+  navigate(url) {
+    console.log('hola');
+    this.maincafeService.navigateTo(url);
+  }
 }

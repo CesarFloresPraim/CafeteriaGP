@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 var userController = require('./controllers/userController.js');
+var productController = require('./controllers/productController.js');
 const { mongoose } = require('./db.js');
 
 var app = express();
@@ -12,3 +13,4 @@ app.listen(3000, () => console.log("Server started at port 3000"));
 
 // Main address http://localhost:4200/cafeteria
 app.use('/login', userController);
+app.use( '/maincafe', productController);
