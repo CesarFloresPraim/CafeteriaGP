@@ -18,15 +18,15 @@ router.post('/', (req, res) => {
     });
 });
 //Route to get user
-router.post('/:username', (req, res) => {
+router.get('/:name', (req, res) => {
     Product.findOne({name: req.params.name }, (err, doc) => {
         if(doc){
                 res.send({
                     name: doc.name
                 });
         } else {
-            console.log('Error retreiving user: ' + JSON.stringify(err, undefined, 2));
-            res.status(400).send('Wrong username/password');
+            console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Wrong name');
         }
     })
 });
@@ -34,17 +34,17 @@ router.post('/:username', (req, res) => {
 router.put('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
-    let user = {
+    let product = {
         name: req.body.name,
         type: req.body.type,
-        description: { type: String},
-        price: {type: Number}
+        description: req.body.type,
+        price: req.body.price
     };
-    User.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {
+    Product.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {
         if(!err){
             res.send(doc);
         } else {
-            console.log('Error updating user: ' + JSON.stringify(err, undefined, 2));
+            console.log('Error updating product: ' + JSON.stringify(err, undefined, 2));
         }
     });
 });
@@ -52,11 +52,11 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
-    User.findByIdAndRemove(req.params.id, (err, doc) => {
+    Product.findByIdAndRemove(req.params.id, (err, doc) => {
         if(!err){
             res.send(doc);
         } else {
-            console.log('Error deleting user: ' + JSON.stringify(err, undefined, 2));
+            console.log('Error deleting product: ' + JSON.stringify(err, undefined, 2));
         }
     });
 });
