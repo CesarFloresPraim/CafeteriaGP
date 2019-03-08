@@ -5,12 +5,14 @@ const ObjectId= require('mongoose').Types.ObjectId;
 var { User } = require('../models/user');
 
 //Route to save user
-router.post('login/', (req, res) => {
+router.post('/', (req, res) => {
     let user = new User({
         name: req.body.name,
         lastname: req.body.lastname,
         username: req.body.username,
-        password: req.body.password
+        email: req.body.email,
+        password: req.body.password,
+        type: req.body.type
     });
     user.save((err,doc) => {
         if (!err) { res.send(doc); }
@@ -18,19 +20,27 @@ router.post('login/', (req, res) => {
     });
 });
 //Route to get user
-router.get('login/:username', (req, res) => {
-    if(!ObjectId.isValid(req.params.username))
-        return res.status(400).send(`No record with given id ${req.params.username}`);
-    User.findBy(req.params.username, (err, doc) => {
-        if(!err){
-            res.send(doc);
+router.post('/:username', (req, res) => {
+    User.findOne({username: req.params.username }, (err, doc) => {
+        if(doc){
+            if(doc.password === req.body.password){
+                res.send({
+                    username: doc.username,
+                    name: doc.name,
+                    lastname: doc.lastname,
+                    _id: doc._id
+                });
+            } else {
+                res.status(400).send('Wrong username/password');
+            }
         } else {
             console.log('Error retreiving user: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Wrong username/password');
         }
     })
 });
 //Route to update user
-router.put('login/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
     let user = {
@@ -48,7 +58,7 @@ router.put('login/:id', (req, res) => {
     });
 });
 //Route to delete user
-router.delete('login/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
     User.findByIdAndRemove(req.params.id, (err, doc) => {

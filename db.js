@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/CRUDdb', (err)=>{
+mongoose.connect('mongodb://localhost:27017/ProjectGammaDB', (err)=>{
     if(!err){
         console.log('Connection succeeded...');
     }else{
