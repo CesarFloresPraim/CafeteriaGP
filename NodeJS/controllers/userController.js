@@ -19,7 +19,7 @@ router.post('/', (req, res) => {
         else { console.log('Error in Employee Save :' + JSON.stringify(err, undefined, 2)); }
     });
 });
-//Route to get user
+//Route to get user for login
 router.post('/:username', (req, res) => {
     User.findOne({username: req.params.username }, (err, doc) => {
         if(doc){

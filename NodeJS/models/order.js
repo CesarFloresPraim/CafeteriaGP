@@ -1,16 +1,12 @@
 const mongoose = require('mongoose');
 
-var Provider = mongoose.model('provider', {
+var Provider = mongoose.model('order', {
     name: { type: String},
-	contact: { type: String},
-	telephone: {type: String},
-	email: {type: String},
-	rfc: { type: String},
-	postalCode: { type: String},
-    street: { type: String},
-	number: { type: String},
-	streetAddress: { type: String},
-	settlement: { type: String},
-}, 'Providers');
+    usuario: { type: String},
+	comedor: { type: String},
+	description: { type: String},
+	producto: {type: String},
+	cantidad: {type: Number}
+}, 'Orders');
 
 module.exports = { Provider };
