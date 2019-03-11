@@ -6,22 +6,33 @@ var { Provider } = require('../models/provider');
 
 //Route to save user
 router.post('/', (req, res) => {
+    console.log(req.body);
     let provider = new Provider({
         name: req.body.name,
-        contact: req.body.contact,
         telephone: req.body.telephone,
         email: req.body.email,
         rfc: req.body.rfc,
-        postalCode: req.body.postalCode,
+        zip_code: req.body.zip_code,
         street: req.body.street,
         number: req.body.number,
-        streetAddress: req.body.streetAddress,
-        settlement:req.body.settlement
+        outter_number: req.body.outter_number,
+        neighborhood:req.body.neighborhood
     });
     provider.save((err,doc) => {
         if (!err) { res.send(doc); }
         else { console.log('Error in Provider Save :' + JSON.stringify(err, undefined, 2)); }
     });
+});
+//Route to all provider
+router.get('/', (req, res) => {
+    Provider.find((err, docs) => {
+        if(docs){
+            res.send(docs);
+        } else {
+            console.log('Error retreiving provider: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Wrong name');
+        }
+    })
 });
 //Route to get provider
 router.get('/:name', (req, res) => {

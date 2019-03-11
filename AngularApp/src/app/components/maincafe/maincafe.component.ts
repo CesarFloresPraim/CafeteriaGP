@@ -8,14 +8,12 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./maincafe.component.css']
 })
 export class MaincafeComponent implements OnInit {
-
   constructor(private maincafeService: MaincafeService) { }
 
   ngOnInit() {
   }
 
   navigate(url) {
-    console.log('hola');
     this.maincafeService.navigateTo(url);
   }
 }

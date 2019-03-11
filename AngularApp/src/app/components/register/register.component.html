@@ -36,26 +36,26 @@
         <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
           <div class="form-group">
             <label>User Name</label>
-            <input type="text" class="form-control" placeholder="Username" name="username" #username="ngModel" [(ngModel)]="registerService.newUser.username">
+            <input type="text" class="form-control" placeholder="Username" name="username" #username="ngModel" [(ngModel)]="registerService.username">
           </div>
           <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control" placeholder="Name" name="name" #name="ngModel" [(ngModel)]="registerService.newUser.name">
+            <input type="text" class="form-control" placeholder="Name" name="name" #name="ngModel" [(ngModel)]="registerService.name">
           </div>
           <div class="form-group">
             <label>Last name</label>
-            <input type="text" class="form-control" placeholder="Last name" name="lastname" #lastname="ngModel" [(ngModel)]="registerService.newUser.lastname">
+            <input type="text" class="form-control" placeholder="Last name" name="lastname" #lastname="ngModel" [(ngModel)]="registerService.lastname">
           </div>
           <div class="form-group">
             <label>Email address</label>
-            <input type="email" class="form-control" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="registerService.newUser.email">
+            <input type="email" class="form-control" placeholder="Email" name="email" #email="ngModel" [(ngModel)]="registerService.email">
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="registerService.newUser.password">
+            <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel" [(ngModel)]="registerService.password">
           </div>
           <div class="card-body">
-            <select data-placeholder="Select type" class="standardSelect" tabindex="1" name="type" #type="ngModel" [(ngModel)]="registerService.newUser.type">
+            <select data-placeholder="Select type" class="standardSelect" tabindex="1" name="type" #type="ngModel" [(ngModel)]="registerService.type">
               <option value="" label="Select type"></option>
               <option value="Chef">Chef</option>
               <option value="Admin">Admin</option>

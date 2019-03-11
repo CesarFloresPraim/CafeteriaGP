@@ -18,12 +18,10 @@ router.post('/', (req, res) => {
     });
 });
 //Route to get user
-router.get('/:name', (req, res) => {
-    Product.findOne({name: req.params.name }, (err, doc) => {
-        if(doc){
-                res.send({
-                    name: doc.name
-                });
+router.get('/', (req, res) => {
+    Product.find((err, docs) => {
+        if(docs){
+                res.send(docs);
         } else {
             console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
             res.status(400).send('Wrong username/password');
@@ -33,12 +31,14 @@ router.get('/:name', (req, res) => {
 });
 //Route to update user
 router.put('/:id', (req, res) => {
+    console.log(req.body);
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
     let product = {
+        _id: req.body._id,
         name: req.body.name,
         type: req.body.type,
-        description: req.body.type,
+        description: req.body.description,
         price: req.body.price
     };
     Product.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {

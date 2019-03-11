@@ -9,7 +9,8 @@ import { MaincafeComponent } from './components/maincafe/maincafe.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProvidersComponent } from './components/providers/providers.component';
-
+import { CategoryComponent } from './components/category/category.component';
+import { FlashMessagesModule } from 'angular2-flash-messages';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +18,15 @@ import { ProvidersComponent } from './components/providers/providers.component';
     MaincafeComponent,
     RegisterComponent,
     ProductComponent,
-    ProvidersComponent
+    ProvidersComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlashMessagesModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

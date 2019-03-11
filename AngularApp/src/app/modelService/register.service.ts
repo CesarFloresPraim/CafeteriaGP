@@ -9,11 +9,16 @@ import 'rxjs';
   providedIn: 'root'
 })
 export class RegisterService {
-  newUser: User;
-  readonly baseURL = 'http://localhost:3000/Users';
+  name: string;
+  lastname: string;
+  username: string;
+  password: string;
+  email: string;
+  type: string;
+  readonly baseURL = 'http://localhost:3000/login';
   constructor(private http: HttpClient) { }
 
   postUser(user: User) {
-    return this.http.post(this.baseURL, user);
+    return this.http.post(this.baseURL , user);
   }
 }

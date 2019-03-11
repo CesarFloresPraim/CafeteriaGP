@@ -8,10 +8,22 @@ import {Router} from '@angular/router';
   providedIn: 'root'
 })
 export class ProductService {
-  newProduct: Product;
-  products: Product[];
   readonly baseURL = 'http://localhost:3000/maincafe/products';
   constructor(private http: HttpClient) { }
 
+  postProduct(product: Product) {
+    return this.http.post(this.baseURL, product);
+  }
 
+  getProductList() {
+    return this.http.get(this.baseURL);
+  }
+
+  putProduct(product: Product) {
+    return this.http.put(this.baseURL + `/${product._id}`, product);
+  }
+
+  deleteProduct(_id: string) {
+    return this.http.delete(this.baseURL + `/${_id}`);
+  }
 }
