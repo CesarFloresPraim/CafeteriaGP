@@ -5,42 +5,31 @@
   <div class="card-body">
     <form #productForm="ngForm" (ngSubmit)="onSubmit(productForm)">
       <input type="hidden" name="_id" #_id_="ngModel" [(ngModel)]="_id">
-      <table id="bootstrap-data-table2" class="table table-striped table-bordered">
-        <thead>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Category</th>
-          <th>Add</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>  <input type="text" placeholder="Name" name="name" #_name="ngModel" [(ngModel)]="name">
-          </td>
-          <td>  <input type="text" placeholder="Description" name="description" #_description="ngModel" [(ngModel)]="description">
-          </td>
-          <td>  <input type="text" placeholder="Price" name="price" #_price="ngModel" [(ngModel)]="price">
-          </td>
-          <td>
-            <select id="selectName" (change)="categoryComponent.updateCategory($event.target.value)" name="type" #_type="ngModel" [(ngModel)]="type" style="display: block">
-              <option value="">Category</option>
-              <option *ngFor="let category of categoryComponent.categories" value="{{category._id}}" >{{category.name}}</option>
-            </select> &nbsp;
-            <i (click)="categoryComponent.createCategory(true)" class="fa fa-plus" style="color: #4dbd74"></i>&nbsp;
-            <i (click)="categoryComponent.createCategory(false)" style="color: orange" class="fa fa-pencil"></i>&nbsp;
-            <i (click)="categoryComponent.delCategory()" class="fa fa-trash-o" style="color: red"></i>
-          </td>
-          <td> <button type="submit"><i class="fa fa-plus" style="color: #4dbd74"></i></button>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+      <div class="form-group col-sm-12">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-user"></i></div>
+          <input type="text" placeholder="Name" name="name" #_name="ngModel" [(ngModel)]="name">&nbsp;
+          <div class="input-group-addon"><i class="fa fa-money"></i></div>
+          <input type="text" placeholder="Description" name="description" #_description="ngModel" [(ngModel)]="description">&nbsp;
+          <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+          <input type="text" placeholder="Price" name="price" #_price="ngModel" [(ngModel)]="price">
+          <select id="selectName" (change)="categoryComponent.updateCategory($event.target.value)" name="type" #_type="ngModel" [(ngModel)]="type" style="display: block">
+            <option value="">Category</option>
+            <option *ngFor="let category of categoryComponent.categories" value="{{category._id}}" >{{category.name}}</option>
+          </select> &nbsp;
+          <i (click)="categoryComponent.createCategory(true)" class="fa fa-plus" style="color: #4dbd74"></i>&nbsp;
+          <i (click)="categoryComponent.createCategory(false)" style="color: orange" class="fa fa-pencil"></i>&nbsp;
+          <i (click)="categoryComponent.delCategory()" class="fa fa-trash-o" style="color: red"></i>
+        </div>
+      </div>
+      <div class="form-group">
+
+      </div>
     </form>
-    <div style="height: 10px; margin-bottom: 8px; background-color: rgba(0, 151, 230,0.6)"></div>
   </div>
 </div>
+<div style="height: 10px; margin-bottom: 8px; background-color: rgba(0, 151, 230,0.6)"></div>
+
 <table id="bootstrap-data-table" class="table table-striped table-bordered">
   <thead>
   <tr>

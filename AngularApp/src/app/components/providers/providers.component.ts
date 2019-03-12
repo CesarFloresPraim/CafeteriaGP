@@ -4,6 +4,7 @@ import { ProvidersService} from '../../modelService/providers.service';
 import {NgForm} from '@angular/forms';
 import {FlashMessagesService} from 'angular2-flash-messages';
 import {Providers} from '../../modelService/providers.model';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-providers',
@@ -27,13 +28,28 @@ export class ProvidersComponent implements OnInit {
 
   ngOnInit() {
     this.fetchProviders();
+    // $('#bootstrap-data-table').DataTable();
+
   }
 
   onSubmit(form: NgForm){
-    this.providersService.postProvider(form.value).subscribe(res => {
-      this.flashMessage.show('Provider saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
-      console.log(res);
-    });
+    if ( form.value._id == undefined){
+      if( form.value.name == undefined){
+        this.flashMessage.show('Name field is mandatory', { cssClass: 'alert-danger', timeout: 2000 });
+      } else {
+        this.providersService.postProvider(form.value).subscribe(res => {
+          this.flashMessage.show('Provider saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
+          console.log(res);
+        });
+      }
+
+    } else {
+      this.providersService.putProvider(form.value).subscribe(res => {
+        this.flashMessage.show('Provider saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
+        console.log(res);
+      });
+    }
+
   }
   fetchProviders() {
     this.providersService.getProviderList().subscribe((res: Providers[]) => {

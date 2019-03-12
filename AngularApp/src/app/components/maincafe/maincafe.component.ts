@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MaincafeService} from '../../modelService/maincafe.service';
 import {NgForm} from '@angular/forms';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-maincafe',

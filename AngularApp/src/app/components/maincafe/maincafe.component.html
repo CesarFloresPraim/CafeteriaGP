@@ -20,16 +20,16 @@
       <ul class="nav navbar-nav">
         <li class="menu-title">Catalogos</li><!-- /.menu-title -->
         <li class="menu-item-has-children dropdown">
-          <a (click)="navigate('products')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Productos</a>
+          <a (click)="navigate('products')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Products</a>
         </li>
         <li class="menu-item-has-children active dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Pedidos</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Orders</a>
         </li>
         <li class="menu-item-has-children dropdown">
-          <a (click)="navigate('providers')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Proveedores</a>
+          <a (click)="navigate('providers')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Providers</a>
         </li>
         <li class="menu-item-has-children dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Unidades</a>
+          <a (click)="navigate('diningrooms')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Dining rooms</a>
         </li>
         <li class="menu-title">Admin</li><!-- /.menu-title -->
 
@@ -155,16 +155,8 @@
 
   <div class="content">
     <div class="animated fadeIn">
-      <div class="row">
-
-        <div class="col-md-12">
           <flash-messages></flash-messages>
           <router-outlet></router-outlet>
-
-        </div>
-
-
-      </div>
     </div><!-- .animated -->
   </div><!-- .content -->
 
@@ -175,16 +167,6 @@
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->
-
-
-
-
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('#bootstrap-data-table-export').DataTable();
-  } );
-</script>
-
 
 </body>
 </html>
