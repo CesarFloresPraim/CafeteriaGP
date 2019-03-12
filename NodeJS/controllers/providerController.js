@@ -53,11 +53,16 @@ router.put('/:id', (req, res) => {
         return res.status(400).send(`No record with given id ${req.params.id}`);
     let provider = {
         name: req.body.name,
-        type: req.body.type,
-        description: req.body.type,
-        price: req.body.price
+        telephone: req.body.telephone,
+        email: req.body.email,
+        rfc: req.body.rfc,
+        zip_code: req.body.zip_code,
+        street: req.body.street,
+        number: req.body.number,
+        outter_number: req.body.outter_number,
+        neighborhood:req.body.neighborhood
     };
-    Provider.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {
+    Provider.findByIdAndUpdate(req.params.id, { $set: provider}, {new: true}, (err, doc) => {
         if(!err){
             res.send(doc);
         } else {
