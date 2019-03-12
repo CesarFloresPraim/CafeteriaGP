@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
         droom: req.body.droom,
         description: req.body.description,
         products: req.body.products,
-        dateTime: req.body.dateTime
+        dateTime: new Date().getDate
     });
     order.save((err,doc) => {
         if (!err) { res.send(doc); }
