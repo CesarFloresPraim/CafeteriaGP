@@ -7,6 +7,7 @@ import { Category} from '../../modelService/category.model';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import {CategoryComponent} from '../category/category.component';
 import {CategoryService} from '../../modelService/category.service';
+import * as $ from 'jquery';
 
 
 @Component({
@@ -30,6 +31,8 @@ export class ProductComponent implements OnInit {
   ngOnInit() {
     this.fetchProducts();
     this.categoryComponent.fetchCategories();
+    // $('#bootstrap-data-table').DataTable();
+
   }
 
   onSubmit(form: NgForm) {

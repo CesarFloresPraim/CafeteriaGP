@@ -2,17 +2,18 @@ const express = require('express');
 const router = express.Router();
 const ObjectId= require('mongoose').Types.ObjectId;
 
-var { DiningRoom } = require('../models/diningroomController');
+var { DiningRoom } = require('../models/diningroom');
 
-//Route to save user
+//Route to save diningroom
 router.post('/', (req, res) => {
     let diningroom = new DiningRoom({
         name: req.body.name,
-        postalCode: req.body.name,
-        street: req.body.name,
-        number: req.body.name,
-        streetAddress: req.body.name,
-        settlement: req.body.name
+        manager: req.body.manager,
+        zip_code: req.body.zip_code,
+        street: req.body.street,
+        number: req.body.number,
+        street_address: req.body.street_address,
+        settlement: req.body.settlement
     });
     diningroom.save((err,doc) => {
         if (!err) { res.send(doc); }
@@ -23,9 +24,20 @@ router.post('/', (req, res) => {
 router.get('/:name', (req, res) => {
     DiningRoom.findOne({name: req.params.name }, (err, doc) => {
         if(doc){
-                res.send({
-                    name: doc.name
-                });
+            res.send({
+                name: doc.name
+            });
+        } else {
+            console.log('Error retreiving dinning room: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Wrong name');
+        }
+    })
+});
+//Route to get all rooms
+router.get('/', (req, res) => {
+    DiningRoom.find((err, docs) => {
+        if(docs){
+            res.send(docs);
         } else {
             console.log('Error retreiving dinning room: ' + JSON.stringify(err, undefined, 2));
             res.status(400).send('Wrong name');
@@ -36,11 +48,14 @@ router.get('/:name', (req, res) => {
 router.put('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
-    let DiningRoom = {
+    let diningroom = {
         name: req.body.name,
-        type: req.body.type,
-        description: req.body.type,
-        price: req.body.price
+        manager: req.body.manager,
+        zip_code: req.body.zip_code,
+        street: req.body.street,
+        number: req.body.number,
+        street_address: req.body.street_address,
+        settlement: req.body.settlement
     };
     DiningRoom.findByIdAndUpdate(req.params.id, { $set: diningroom}, {new: true}, (err, doc) => {
         if(!err){

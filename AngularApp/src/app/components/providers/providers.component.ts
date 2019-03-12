@@ -4,6 +4,7 @@ import { ProvidersService} from '../../modelService/providers.service';
 import {NgForm} from '@angular/forms';
 import {FlashMessagesService} from 'angular2-flash-messages';
 import {Providers} from '../../modelService/providers.model';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-providers',
@@ -27,6 +28,8 @@ export class ProvidersComponent implements OnInit {
 
   ngOnInit() {
     this.fetchProviders();
+    // $('#bootstrap-data-table').DataTable();
+
   }
 
   onSubmit(form: NgForm){
