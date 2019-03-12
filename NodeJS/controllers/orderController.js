@@ -7,12 +7,11 @@ var { Order } = require('../models/order');
 //Route to save order
 router.post('/', (req, res) => {
     let order= new Order({
-        name: req.body.name,
         user: req.body.user,
         droom: req.body.droom,
         description: req.body.description,
         products: req.body.products,
-        quantities: req.body.quantities
+        dateTime: req.body.dateTime
     });
     order.save((err,doc) => {
         if (!err) { res.send(doc); }
@@ -37,12 +36,12 @@ router.put('/:id', (req, res) => {
     if(!ObjectId.isValid(req.params.id))
         return res.status(400).send(`No record with given id ${req.params.id}`);
     let order = {
-        name: req.body.name,
         user: req.body.user,
         droom: req.body.droom,
         description: req.body.description,
         products: req.body.products,
-        quantities: req.body.quantities
+        dateTime: req.body.dateTime
+
     };
         Order.findByIdAndUpdate(req.params.id, { $set: order}, {new: true}, (err, doc) => {
         if(!err){
