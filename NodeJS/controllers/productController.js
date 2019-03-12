@@ -9,8 +9,10 @@ router.post('/', (req, res) => {
     let product = new Product({
         name: req.body.name,
         type: req.body.type,
+        unit: req.body.type,
         description: req.body.description,
-        price: req.body.price
+        price: req.body.price,
+        provider: req.body.provider
     });
     product.save((err,doc) => {
         if (!err) { res.send(doc); }
@@ -38,8 +40,10 @@ router.put('/:id', (req, res) => {
         _id: req.body._id,
         name: req.body.name,
         type: req.body.type,
+        unit: req.body.unit,
         description: req.body.description,
-        price: req.body.price
+        price: req.body.price,
+        provider: req.body.provider
     };
     Product.findByIdAndUpdate(req.params.id, { $set: product}, {new: true}, (err, doc) => {
         if(!err){
