@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+var orderController = require('./controllers/orderController');
 var diningroomController = require('./controllers/diningroomController');
 var providerController = require('./controllers/providerController');
 var categoryController = require('./controllers/categoryController');
@@ -20,4 +21,5 @@ app.use('/maincafe/products', productController);
 app.use('/maincafe/categories', categoryController);
 app.use('/maincafe/providers', providerController);
 app.use('/maincafe/diningrooms', diningroomController);
+app.use('/maincafe/orders', orderController);
 

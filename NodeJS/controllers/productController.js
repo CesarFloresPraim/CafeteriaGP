@@ -26,7 +26,31 @@ router.get('/', (req, res) => {
                 res.send(docs);
         } else {
             console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
-            res.status(400).send('Wrong username/password');
+            res.status(400).send('Error retreiving products');
+
+        }
+    })
+});
+//Route to get user
+router.get('/:name', (req, res) => {
+    Product.find({"name" : {$regex :`${req.params.name}.*`}}, (err, docs) => {
+        if(docs){
+            res.send(docs);
+        } else {
+            console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Error retreiving products');
+
+        }
+    })
+});
+//Route to get user
+router.get('/category/:category', (req, res) => {
+    Product.find({"type" : req.params.category}, (err, docs) => {
+        if(docs){
+            res.send(docs);
+        } else {
+            console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Error retreiving products');
 
         }
     })

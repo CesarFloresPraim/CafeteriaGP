@@ -3,6 +3,7 @@ import { Category} from '../../modelService/category.model';
 
 import { CategoryService} from '../../modelService/category.service';
 import {NgForm} from "@angular/forms";
+import {FlashMessagesService} from 'angular2-flash-messages';
 
 @Component({
   selector: 'app-category',
@@ -13,7 +14,7 @@ export class CategoryComponent implements OnInit {
   category: Category;
   _id: string;
   name: string;
-  constructor(private categoryService: CategoryService) { }
+  constructor(private categoryService: CategoryService, private flashMessage: FlashMessagesService) { }
   categories: Category[];
   ngOnInit() {
     // this.fetchCategories();
@@ -33,6 +34,8 @@ export class CategoryComponent implements OnInit {
       this.categoryService.postCategory(this.category).subscribe(res => {
         console.log(res);
       });
+      this.flashMessage.show('Category saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
+
     } else {
       this.name = prompt('Updated category name?');
       this.category = {
@@ -40,6 +43,7 @@ export class CategoryComponent implements OnInit {
         name: this.name
       };
       this.categoryService.putCategory(this.category).subscribe(res => {
+        this.flashMessage.show('Category updated succesfully!', { cssClass: 'alert-success', timeout: 2000 });
       });
     }
   }
@@ -49,5 +53,6 @@ export class CategoryComponent implements OnInit {
   }
   delCategory() {
     this.categoryService.deleteCategory(this._id);
+    this.flashMessage.show('Category deleted succesfully!', { cssClass: 'alert-success', timeout: 2000 });
   }
 }

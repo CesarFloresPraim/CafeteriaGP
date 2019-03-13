@@ -12,6 +12,7 @@ import { ProvidersComponent } from './components/providers/providers.component';
 import { CategoryComponent } from './components/category/category.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { DiningroomComponent } from './components/diningroom/diningroom.component';
+import { OrderComponent } from './components/order/order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { DiningroomComponent } from './components/diningroom/diningroom.componen
     ProductComponent,
     ProvidersComponent,
     CategoryComponent,
-    DiningroomComponent
+    DiningroomComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

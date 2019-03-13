@@ -5,7 +5,7 @@ var Order = mongoose.model('order', {
 	droom: { type: String },
 	description: { type: String },
 	products: { type: Array },
-	dateTime: { type: Date }
-}, 'Orders');
+	dateTime: { type: Date}
+}, 'orders');
 
 module.exports = { Order };

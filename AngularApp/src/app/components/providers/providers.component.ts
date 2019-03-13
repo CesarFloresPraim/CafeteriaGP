@@ -72,7 +72,5 @@ export class ProvidersComponent implements OnInit {
     this.number = prov.number;
     this.outter_number = prov.outter_number;
     this.neighborhood = prov.neighborhood;
-
-
   }
 }

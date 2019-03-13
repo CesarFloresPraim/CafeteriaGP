@@ -6,12 +6,13 @@ var { Order } = require('../models/order');
 
 //Route to save order
 router.post('/', (req, res) => {
+    console.log(req.body);
     let order= new Order({
-        user: req.body.user,
-        droom: req.body.droom,
-        description: req.body.description,
-        products: req.body.products,
-        dateTime: new Date().getDate
+        user: req.body.form.user,
+        droom: req.body.form.droom,
+        description: req.body.form.description,
+        products: req.body.cart,
+        dateTime: new Date()
     });
     order.save((err,doc) => {
         if (!err) { res.send(doc); }

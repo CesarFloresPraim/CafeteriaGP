@@ -9,11 +9,15 @@
         <div class="input-group">
           <div class="input-group-addon"><i class="fa fa-user"></i></div>
           <input type="text" placeholder="Name" name="name" #_name="ngModel" [(ngModel)]="name">&nbsp;
-          <div class="input-group-addon"><i class="fa fa-money"></i></div>
+          <div class="input-group-addon"><i class="fa fa-font"></i></div>
           <input type="text" placeholder="Description" name="description" #_description="ngModel" [(ngModel)]="description">&nbsp;
           <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
           <input type="text" placeholder="Price" name="price" #_price="ngModel" [(ngModel)]="price">
-          <select id="selectName" (change)="categoryComponent.updateCategory($event.target.value)" name="type" #_type="ngModel" [(ngModel)]="type" style="display: block">
+        </div>
+      </div>
+      <div class="input-group col-sm-5">
+        <div class="input-group">
+          <select class="form-control" id="selectName" (change)="categoryComponent.updateCategory($event.target.value)" name="type" #_type="ngModel" [(ngModel)]="type" style="display: block">
             <option value="">Category</option>
             <option *ngFor="let category of categoryComponent.categories" value="{{category._id}}" >{{category.name}}</option>
           </select> &nbsp;
@@ -22,9 +26,9 @@
           <i (click)="categoryComponent.delCategory()" class="fa fa-trash-o" style="color: red"></i>
         </div>
       </div>
-      <div class="form-group">
+      <br>
+      <div class="form-actions form-group"><button type="submit" class="btn btn-success btn-sm">Submit</button></div>
 
-      </div>
     </form>
   </div>
 </div>
