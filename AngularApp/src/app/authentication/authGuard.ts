@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 
-import { AuthenticationService } from '../modelService/authService.service';
+import { LoginService } from '../modelService/login.service';
 
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
     constructor(
         private router: Router,
-        private authenticationService: AuthenticationService
+        private LoginService: LoginService
     ) {}
 
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        const currentUser = this.authenticationService.currentUserValue;
+        const currentUser = this.LoginService.currentUserValue;
         if (currentUser) {
             // check if route is restricted by role
             if (route.data.roles && route.data.roles.indexOf(currentUser.type) === -1) {

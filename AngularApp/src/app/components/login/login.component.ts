@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../modelService/login.service';
 import { User } from '../../modelService/user.model';
 import { NgForm } from '@angular/forms';
-import {Router} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { first } from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -23,6 +25,6 @@ export class LoginComponent implements OnInit {
       username: this.username,
       password: this.password
     };
-    this.loginService.getUserDetails(user);
+    // this.loginService.getUserDetails(user);
   }
 }
