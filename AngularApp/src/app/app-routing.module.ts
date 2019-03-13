@@ -10,6 +10,8 @@ import { OrderComponent} from './components/order/order.component';
 
 const routes: Routes = [
   {path: 'maincafe', component: MaincafeComponent,
+  canActivate: [authGuard], 
+  data: { roles: [Role.Admin] } ,
     children : [{
       path: 'products', component: ProductComponent
     },
