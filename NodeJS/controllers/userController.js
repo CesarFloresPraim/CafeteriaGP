@@ -14,9 +14,15 @@ router.post('/', (req, res) => {
         password: req.body.password,
         type: req.body.type
     });
+    bcrypt.genSalt(10, (err, salt) => 
+    bcrypt.hash(user.password, salt, (err, hash) => {
+        if(err) throw err;
+        //set pw to hash
+        user.password = hash;
+    }))
     user.save((err,doc) => {
         if (!err) { res.send(doc); }
-        else { console.log('Error in Employee Save :' + JSON.stringify(err, undefined, 2)); }
+        else { console.log('Error in user Save :' + JSON.stringify(err, undefined, 2)); }
     });
 });
 //Route to get user for login
