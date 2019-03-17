@@ -12,6 +12,8 @@ import { User} from './user.model';
 export class LoginService {
   readonly baseURL = 'http://localhost:3000/login';
   constructor(private http: HttpClient, private router: Router) { }
+
+  //this must implement passport, solution failed
   getUserDetails(user) {
     return this.http.post(this.baseURL + '/' + user.username, user).subscribe(data => {
       this.router.navigate(['/maincafe']).then(e => {
