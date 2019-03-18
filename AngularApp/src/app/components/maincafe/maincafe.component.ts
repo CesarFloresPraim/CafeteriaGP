@@ -9,7 +9,8 @@ import * as $ from 'jquery';
   styleUrls: ['./maincafe.component.css']
 })
 export class MaincafeComponent implements OnInit {
-  constructor(private maincafeService: MaincafeService) { }
+  constructor(private maincafeService: MaincafeService) {
+  }
 
   ngOnInit() {
   }
@@ -18,3 +19,4 @@ export class MaincafeComponent implements OnInit {
     this.maincafeService.navigateTo(url);
   }
 }
+

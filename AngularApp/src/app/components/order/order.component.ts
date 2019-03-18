@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import * as moment from 'moment';
 
 import {OrderService} from '../../modelService/order.service';
 import {FlashMessagesService} from 'angular2-flash-messages';
@@ -9,21 +10,27 @@ import {NgForm} from '@angular/forms';
 import { Order} from '../../modelService/order.model';
 import {CategoryService} from '../../modelService/category.service';
 import { Category} from '../../modelService/category.model';
+import { Select2OptionData } from 'ng2-select2';
+
 
 @Component({
   selector: 'app-order',
   templateUrl: './order.component.html',
   styleUrls: ['./order.component.css']
 })
+
 export class OrderComponent implements OnInit {
+  time: string;
+  product: Product;
   products: Product[];
   orders: Order[];
   categories: Category[];
-  cart: Array<Product> = [];
+  cart: Array<any> = [];
   _id: string;
   droom: string;
   description: string;
   user: string;
+  sortedProduct: Array<Select2OptionData> = [];
   ord: any;
   constructor(private orderService: OrderService, private flashMessage: FlashMessagesService, private productService: ProductService,
               private categoryService: CategoryService) { }
@@ -31,7 +38,11 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
     this.fetchOrders();
     this.fecthCategories();
+    // this.fecthProductCategories();
+    this.time = moment().format('LLLL');
+
   }
+
 
   fetchOrders() {
     this.orderService.getOrderList().subscribe((res: Order[]) => {
@@ -42,23 +53,26 @@ export class OrderComponent implements OnInit {
   fecthCategories() {
     this.categoryService.getCategoryList().subscribe((res: Category[]) => {
       this.categories = res;
-      for (let element of this.categories) {
-        this.productService.getProductPerCategory(element.name).subscribe((res: Product[]) => {
-          let $dropdown = $('#' + element.name + '_cat');
-          for (let prod of res) {
-            $dropdown.append($('<option />').val(prod._id).text(prod.name));
+      for (let cat of res) {
+        this.productService.getProductPerCategory(cat.name).subscribe((ress: Product[]) => {
+          for (let prod of ress){
+            let data = {
+              id: prod._id,
+              text: prod.name
+            };
+            let newOption = new Option(data.text, data.id, false, false);
+            $('#select-' + cat.name + ' select').append(newOption).trigger('change');
           }
         });
       }
     });
+    this.sortedProduct = [{
+      id: '',
+      text: 'Select a product'
+    }];
+
   }
-  onKeyUp(event: KeyboardEvent): void {
-    if (event.key === 'Enter') {
-      // this.fetchProducts($('#search_prod').val());
-      // show table
-      // $('#tableDiv').show();
-    }
-  }
+
   onSubmit(form: NgForm) {
     if ( form.value._id == undefined) {
       this.ord = {
@@ -66,16 +80,13 @@ export class OrderComponent implements OnInit {
         cart: this.cart
       };
       this.orderService.postOrder(this.ord).subscribe(res => {
-          this.flashMessage.show('Provider saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
+          this.flashMessage.show('Order saved succesfully!', { cssClass: 'alert-success', timeout: 2000 });
           console.log(res);
         });
       }
   }
-  onAdd(product: Product) {
-    this.cart.push(product);
-    $('#tableDiv').hide();
-    console.log(this.cart);
-
+  onOrderProduct(form: NgForm) {
+    console.log(form.value);
   }
   onRemove(prod: Product) {
     this.cart.splice(this.cart.findIndex(e => e._id === prod._id), 1);
@@ -83,10 +94,17 @@ export class OrderComponent implements OnInit {
   onDelete(id: string) {
     this.orderService.deleteOrder(id).subscribe(res => {
       this.flashMessage.show('Order deleted succesfully!', { cssClass: 'alert-success', timeout: 2000 });
-      console.log(res);
     });
   }
-  addRow() {
-
+  addRow(event: any) {
+    const category = event.name;
+    this.cart.push({
+      _id: $('#select-' + category).find(':selected').val(),
+      name: $('#select-' + category).find(':selected').text(),
+      quantity: $('#quantity-' + category).val(),
+      provider_id: $('#selectProv-' + category).val(),
+      unit: $('#selectUnit-' + category).val()
+    });
+    $('#tableDiv').hide();
   }
 }

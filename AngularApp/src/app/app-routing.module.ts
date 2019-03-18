@@ -7,6 +7,7 @@ import { ProductComponent} from './components/product/product.component';
 import { ProvidersComponent} from './components/providers/providers.component';
 import { DiningroomComponent} from './components/diningroom/diningroom.component';
 import { OrderComponent} from './components/order/order.component';
+import { AuthorizationComponent} from './components/authorization/authorization.component';
 
 const routes: Routes = [
   {path: 'maincafe', component: MaincafeComponent,
@@ -16,14 +17,15 @@ const routes: Routes = [
       {path: 'register', component: RegisterComponent},
       {path: 'providers', component: ProvidersComponent},
       {path: 'diningrooms', component: DiningroomComponent},
-      {path: 'orders', component: OrderComponent}
-      ]
+      {path: 'orders', component: OrderComponent},
+      {path: 'authorization', component: AuthorizationComponent}
+      ],
   },
   {path: 'login', component: LoginComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

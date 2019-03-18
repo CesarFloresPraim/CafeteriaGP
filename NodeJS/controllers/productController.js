@@ -44,8 +44,11 @@ router.get('/:name', (req, res) => {
     })
 });
 //Route to get user
-router.get('/category/:category', (req, res) => {
-    Product.find({"type" : req.params.category}, (err, docs) => {
+router.get('/category2/:cat/:search', (req, res) => {
+    console.log(req.params.cat, req.params.search);
+    Product.find(    {$and:[ {"type": req.params.cat}, {"name": {$regex :`${req.params.search}.*`}}
+
+        ]}, (err, docs) => {
         if(docs){
             res.send(docs);
         } else {
@@ -54,6 +57,22 @@ router.get('/category/:category', (req, res) => {
 
         }
     })
+
+});
+//Route to get user
+router.get('/category/:category', (req, res) => {
+    Product.find(    {$or:[
+            {"type": req.params.category}
+        ]}, (err, docs) => {
+        if(docs){
+            res.send(docs);
+        } else {
+            console.log('Error retreiving product: ' + JSON.stringify(err, undefined, 2));
+            res.status(400).send('Error retreiving products');
+
+        }
+    })
+
 });
 //Route to update user
 router.put('/:id', (req, res) => {

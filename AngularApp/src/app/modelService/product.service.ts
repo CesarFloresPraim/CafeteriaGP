@@ -18,8 +18,8 @@ export class ProductService {
   getProductList() {
     return this.http.get(this.baseURL);
   }
-  getProductSeacrh(name: string) {
-    return this.http.get(this.baseURL + `/${name}`);
+  getProductSeacrh(cat: string, search: string) {
+    return this.http.get(this.baseURL + `/category2/${cat}/${search}` );
   }
   getProductPerCategory(name: string) {
     return this.http.get(this.baseURL + `/category/${name}`);

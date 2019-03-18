@@ -13,6 +13,9 @@ import { CategoryComponent } from './components/category/category.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { DiningroomComponent } from './components/diningroom/diningroom.component';
 import { OrderComponent } from './components/order/order.component';
+import { NgSelect2Module } from 'ng-select2';
+import { Select2Module } from 'ng2-select2';
+import { AuthorizationComponent } from './components/authorization/authorization.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +26,17 @@ import { OrderComponent } from './components/order/order.component';
     ProvidersComponent,
     CategoryComponent,
     DiningroomComponent,
-    OrderComponent
+    OrderComponent,
+    AuthorizationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FlashMessagesModule.forRoot()
+    FlashMessagesModule.forRoot(),
+    NgSelect2Module,
+    Select2Module
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,4 +22,5 @@ app.use('/maincafe/categories', categoryController);
 app.use('/maincafe/providers', providerController);
 app.use('/maincafe/diningrooms', diningroomController);
 app.use('/maincafe/orders', orderController);
+app.use('/maincafe/authorization', orderController);
 
