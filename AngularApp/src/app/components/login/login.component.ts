@@ -16,22 +16,17 @@ export class LoginComponent implements OnInit {
     password: new FormControl(null, Validators.required)
       
   });
-  username: string;
-  password: string;
   constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    const user = {
-      username: this.username,
-      password: this.password
-    };
     if(!this.loginForm.valid){
       console.log("invalid");
     } else {
-    this.loginService.getUserDetails(JSON.stringify(this.loginForm.value)).subscribe(
+    this.loginService.login(JSON.stringify(this.loginForm.value))
+    .subscribe(
       data => {console.log(data); this.router.navigate(['/maincafe'])},
       error => console.log(error)
     );

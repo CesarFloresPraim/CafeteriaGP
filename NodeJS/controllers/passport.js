@@ -1,39 +1,33 @@
-const LocalStrategy = require('passport-local').Strategy;
-const mongoose = require('mongoose');
+var passport = require('passport'), 
+    LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcrypt');
 const User = require('../models/user');
 
-module.exports = function(passport) {
-    passport.use('local',
-        new LocalStrategy({ usernameField: 'username'}, (username, password, done) => {
-            User.findOne({ username: username})
-            .then(user => {
-                if(!user){
-                    return done(null, false, {message: 'user not registered'});
-                }
-                //match pw
-                bcrypt.compare(password, user.password, (err,isMatch) => {
-                    if(err) throw err;
-
-                    if(isMatch){
-                        return done(null, user);
-                    } else {
-                        return done(null, false, { message: 'incorrect password'});
-                    }
-                });
-            })
-            .catch(err => console.log(err));
-        })
-    );
+    passport.use('local', new LocalStrategy({
+        usernameField: 'username',
+        passwordField: 'password'
+    },
+        function(username, password, done) {
+          User.findOne({ username: username }, function (err, user) {
+            if (err) { return done(err); }
+            if (!user) {
+              return done(null, false, { message: 'Incorrect username.' });
+            }
+            if (password !== user.password) {
+              return done(null, false, { message: 'Incorrect password.' });
+            }
+            return done(null, user);
+          });
+        }
+      ));
     //passport documentation
 
     passport.serializeUser((user, done) =>{
         done(null, user._id);
     });
 
-    passport.deserializeUser(function(id,done){
-        User.findById(id, function(err, user){
+    passport.deserializeUser(function(_id,done){
+        User.findById(_id, function(err, user){
             done(err, user);
         })
     })
-}

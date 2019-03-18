@@ -5,16 +5,17 @@ var User = mongoose.model('user', {
     name: { type: String},
     lastname: { type: String},
     username: { type: String},
-    password: { type: String},
-    email: { type: String},
-    type: { type: String}
+    password: { type: String, require: true},
+    email: { type: String, require: true },
+    type: { type: String, require: true},
+    dinningRooms: { type: Array }
 }, 'users');
 
-// function HashPassword(password){
+// User.prototype.HashPassword = function(password){
 //     return bcrypt.hashSync(password, 10);
 // }
 
-function isValidPassword(hashedpassword){
-    return bcrypt.compareSync(hashedpassword, this.password);
-}
+// User.prototype.isValidPassword = function (hashedpassword){
+//     return bcrypt.compareSync(hashedpassword, this.password);
+// }
 module.exports = { User };

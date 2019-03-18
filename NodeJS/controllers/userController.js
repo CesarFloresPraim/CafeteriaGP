@@ -13,8 +13,9 @@ router.post('/', (req, res) => {
         lastname: req.body.lastname,
         username: req.body.username,
         email: req.body.email,
-        password: bcrypt.hashSync(req.body.password, 10),
-        type: req.body.type
+        password: req.body.password,
+        type: req.body.type,
+        dinningRooms: req.body.dinningRooms
     });
     
     user.save((err,doc) => {
@@ -23,13 +24,17 @@ router.post('/', (req, res) => {
     });
 });
 //Route to get user for login
-router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-        successRedirect: '/maincafe',
-        failureRedirect: '/login',
-        failureFlash: true
-    })(req,res,next);
-}) 
+router.post('/login', function(req, res, next){
+    passport.authenticate('local', function(err, user, info) {
+        if (err) { return res.status(501).json(err); }
+        if (!user) { return res.status(501).json(info); }
+        req.logIn(user, function(err) {
+          if (err) { return next(err); }
+          //return res.redirect('/maincafe');
+          return res.status(200).json({message: 'Login Success'})
+        });
+      })(req, res, next);
+});
 // router.post('/:username', (req, res) => {
 //     User.findOne({username: req.params.username }, (err, doc) => {
 //         if(doc){

@@ -13,6 +13,7 @@ import { CategoryComponent } from './components/category/category.component';
 import { FlashMessagesModule } from 'angular2-flash-messages';
 import { DiningroomComponent } from './components/diningroom/diningroom.component';
 import { OrderComponent } from './components/order/order.component';
+import { LoginService } from './modelService/login.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,9 @@ import { OrderComponent } from './components/order/order.component';
     ReactiveFormsModule,
     HttpClientModule,
     FlashMessagesModule.forRoot()
+  ],
+  providers: [
+    LoginService
   ],
   bootstrap: [AppComponent]
 })
