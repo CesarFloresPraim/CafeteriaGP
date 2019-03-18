@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+var bcrypt = require('bcrypt');
 
 var User = mongoose.model('user', {
     name: { type: String},
@@ -9,4 +10,11 @@ var User = mongoose.model('user', {
     type: { type: String}
 }, 'users');
 
+// function HashPassword(password){
+//     return bcrypt.hashSync(password, 10);
+// }
+
+function isValidPassword(hashedpassword){
+    return bcrypt.compareSync(hashedpassword, this.password);
+}
 module.exports = { User };

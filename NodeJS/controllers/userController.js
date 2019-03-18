@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const ObjectId= require('mongoose').Types.ObjectId;
 const passport = require('passport');
 
-var { User } = require('../models/user');
+var  { User }  = require('../models/user');
 
 //Route to save user
 router.post('/', (req, res) => {
@@ -13,15 +13,10 @@ router.post('/', (req, res) => {
         lastname: req.body.lastname,
         username: req.body.username,
         email: req.body.email,
-        password: req.body.password,
+        password: bcrypt.hashSync(req.body.password, 10),
         type: req.body.type
     });
-    bcrypt.genSalt(10, (err, salt) => 
-    bcrypt.hash(user.password, salt, (err, hash) => {
-        if(err) throw err;
-        //set pw to hash
-        user.password = hash;
-    }))
+    
     user.save((err,doc) => {
         if (!err) { res.send(doc); }
         else { console.log('Error in user Save :' + JSON.stringify(err, undefined, 2)); }

@@ -18,12 +18,26 @@ const { mongoose } = require('./db.js');
 
 
 var app = express();
+var session = require('express-session');
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(cors({ origin: 'http://localhost:4200' }));
+app.use(cors({ origin: 'http://localhost:4200',
+credentials: true }));
 app.listen(3000, () => console.log("Server started at port 3000"));
 //passport
+app.use(session({
+    secret: 'sessionsecret',
+    name: 'cafeteria.sid',
+    resave: false,
+    saveUninitialized: false,
+    cookie:{
+        maxAge: 3600000000,
+        httpOnly: false,
+        secure: false
+    }
+}));
+
 
 // Main address http://localhost:4200/cafeteria
 app.use('/login', userController);
