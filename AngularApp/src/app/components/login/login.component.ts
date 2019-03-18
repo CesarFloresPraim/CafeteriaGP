@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../modelService/login.service';
 import { User } from '../../modelService/user.model';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormGroup, FormControl, Validators } from '@angular/forms';
 import {Router} from '@angular/router';
 
 @Component({
@@ -11,18 +11,25 @@ import {Router} from '@angular/router';
   providers: [LoginService]
 })
 export class LoginComponent implements OnInit {
-  username: string;
-  password: string;
-  constructor(private loginService: LoginService) { }
+  loginForm : FormGroup = new FormGroup({
+    username: new FormControl(null,Validators.required),
+    password: new FormControl(null, Validators.required)
+      
+  });
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    const user = {
-      username: this.username,
-      password: this.password
-    };
-    this.loginService.getUserDetails(user);
+    if(!this.loginForm.valid){
+      console.log("invalid");
+    } else {
+    this.loginService.login(JSON.stringify(this.loginForm.value))
+    .subscribe(
+      data => {console.log(data); this.router.navigate(['/maincafe'])},
+      error => console.log(error)
+    );
+    }
   }
 }

@@ -41,14 +41,14 @@
           </a>
         </div>
         <br>
-        <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+        <form [formGroup] = "loginForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" placeholder="Username" id="username" [(ngModel)]="username" name="username">
+            <input formControlName="username" type="text" class="form-control" placeholder="Username" id="username" [(ngModel)]="username" name="username">
           </div>
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" placeholder="Password" id="password" [(ngModel)]="password" name="password">
+            <input formControlName="password" type="password" class="form-control" placeholder="Password" id="password" [(ngModel)]="password" name="password">
           </div>
           <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30" style="color: white;">Sign in</button>
         </form>

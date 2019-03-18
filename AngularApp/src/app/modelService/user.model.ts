@@ -6,5 +6,4 @@ export interface User {
   password: string;
   email: string;
   type: string;
-  token?: string;
 }

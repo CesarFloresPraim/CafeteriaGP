@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,6 +16,7 @@ import { OrderComponent } from './components/order/order.component';
 import { NgSelect2Module } from 'ng-select2';
 import { Select2Module } from 'ng2-select2';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
+import { LoginService } from './modelService/login.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +34,15 @@ import { AuthorizationComponent } from './components/authorization/authorization
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     FlashMessagesModule.forRoot(),
     NgSelect2Module,
     Select2Module
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
