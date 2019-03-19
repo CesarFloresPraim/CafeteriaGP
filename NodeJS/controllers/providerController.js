@@ -35,15 +35,15 @@ router.get('/', (req, res) => {
     })
 });
 //Route to get provider
-router.get('/:name', (req, res) => {
-    Provider.findOne({name: req.params.name }, (err, doc) => {
+router.get('/:_id', (req, res) => {
+    Provider.findOne({_id: req.params._id }, (err, doc) => {
         if(doc){
                 res.send({
                     name: doc.name
                 });
         } else {
             console.log('Error retreiving provider: ' + JSON.stringify(err, undefined, 2));
-            res.status(400).send('Wrong name');
+            res.status(400).send('Wrong id');
         }
     })
 });

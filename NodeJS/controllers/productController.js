@@ -4,22 +4,23 @@ const ObjectId= require('mongoose').Types.ObjectId;
 
 var { Product } = require('../models/product');
 
-//Route to save user
+//Route to save product
 router.post('/', (req, res) => {
     let product = new Product({
-        name: req.body.name,
-        type: req.body.type,
-        unit: req.body.type,
-        description: req.body.description,
-        price: req.body.price,
-        provider: req.body.provider
+        name: req.body.prod.name,
+        type: req.body.prod.type,
+        unit: req.body.possible,
+        description: req.body.prod.description,
+        price: req.body.prod.price,
+        provider: req.body.prod.provider
     });
+    console.log(product);
     product.save((err,doc) => {
         if (!err) { res.send(doc); }
         else { console.log('Error in Product Save :' + JSON.stringify(err, undefined, 2)); }
     });
 });
-//Route to get user
+//Route to get product
 router.get('/', (req, res) => {
     Product.find((err, docs) => {
         if(docs){

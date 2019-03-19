@@ -4,6 +4,7 @@ import { HttpClient} from '@angular/common/http';
 import 'rxjs';
 import { Observable } from 'rxjs';
 import {Router} from '@angular/router';
+import {Unit} from './unit.model';
 @Injectable({
   providedIn: 'root'
 })
@@ -11,8 +12,12 @@ export class ProductService {
   readonly baseURL = 'http://localhost:3000/maincafe/products';
   constructor(private http: HttpClient) { }
 
-  postProduct(product: Product) {
-    return this.http.post(this.baseURL, product);
+  postProduct(product: Product, possibleUnits: Array<Unit>) {
+    let fullProduct = {
+      prod: product,
+      possible: possibleUnits
+    };
+    return this.http.post(this.baseURL, fullProduct);
   }
 
   getProductList() {

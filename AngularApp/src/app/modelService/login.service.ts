@@ -36,8 +36,8 @@ export class LoginService {
 //     })(req,res,next);
 // }) 
   //this must implement passport, solution failed
-  login(body:any) {
-    return this.http.post(this.baseURL,body, {
+  login(body: any) {
+    return this.http.post(this.baseURL + '/login', body, {
       observe: 'body',
       withCredentials: true,
       headers: new HttpHeaders().append('Content-Type', 'application/json')

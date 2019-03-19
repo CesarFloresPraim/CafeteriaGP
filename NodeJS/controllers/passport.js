@@ -30,4 +30,4 @@ const User = require('../models/user');
         User.findById(_id, function(err, user){
             done(err, user);
         })
-    })
+    });

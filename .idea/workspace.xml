@@ -7,15 +7,35 @@
       <change beforePath="$PROJECT_DIR$/AngularApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/admin/admin.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/admin/admin.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/authorization.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/authorization.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AngularApp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/providers.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/providers.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AngularApp/src/app/modelService/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/AngularApp/src/app/modelService/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/controllers/diningroomController.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/diningroomController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/controllers/orderController.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/orderController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/controllers/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/passport.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NodeJS/controllers/productController.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/productController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/controllers/providerController.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/providerController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/controllers/userController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NodeJS/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/models/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/models/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NodeJS/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/NodeJS/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,93 +52,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html">
+        <entry file="file://$PROJECT_DIR$/NodeJS/controllers/orderController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="164" column="25" lean-forward="true" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+            <state relative-caret-position="192">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NodeJS/controllers/productController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-250">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NodeJS/models/order.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="228">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#687#693#0" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#1911#1917#1" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#button#1;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NodeJS/controllers/userController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="26" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/login/login.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#strong#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1333#1339#0" expanded="true" />
+                <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,19 +98,60 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-23">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="289">
+              <caret line="51" selection-start-line="51" selection-end-line="53" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="56" />
+            <state relative-caret-position="135">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.model.ts">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,43 +172,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NodeJS/models/product.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/maincafe.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/user.model.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/register.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/register/register.component.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/register/register.component.html" />
-        <option value="$PROJECT_DIR$/NodeJS/models/category.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/login/login.component.html" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/category.model.ts" />
-        <option value="$PROJECT_DIR$/NodeJS/controllers/categoryController.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/category.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/providers.model.ts" />
-        <option value="$PROJECT_DIR$/NodeJS/models/provider.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/providers.service.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.css" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.css" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.model.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.ts" />
         <option value="$PROJECT_DIR$/NodeJS/models/diningroom.js" />
-        <option value="$PROJECT_DIR$/NodeJS/controllers/diningroomController.js" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.html" />
-        <option value="$PROJECT_DIR$/NodeJS/controllers/providerController.js" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/category/category.component.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.html" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts" />
-        <option value="$PROJECT_DIR$/NodeJS/models/order.js" />
-        <option value="$PROJECT_DIR$/NodeJS/controllers/orderController.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts" />
-        <option value="$PROJECT_DIR$/NodeJS/controllers/productController.js" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/app.component.css" />
@@ -204,13 +188,41 @@
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.css" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/AngularApp/src/index.html" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/user.service.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/admin/admin.component.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/passport.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/authorization.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/models/approvedOrder.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/providers.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/providerController.js" />
+        <option value="$PROJECT_DIR$/NodeJS/models/order.js" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/userController.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/unit.model.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/unit.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/models/product.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/productController.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.html" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts" />
-        <option value="$PROJECT_DIR$/NodeJS/index.js" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts" />
-        <option value="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html" />
         <option value="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/index.js" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/trailerController.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html" />
+        <option value="$PROJECT_DIR$/NodeJS/models/trailer.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/diningroomController.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts" />
+        <option value="$PROJECT_DIR$/NodeJS/controllers/orderController.js" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.ts" />
+        <option value="$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.html" />
       </list>
     </option>
   </component>
@@ -286,25 +298,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CafeteriaGP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CafeteriaGP" type="462c0819:PsiDirectoryNode" />
-              <item name="AngularApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="maincafe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CafeteriaGP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CafeteriaGP" type="462c0819:PsiDirectoryNode" />
-              <item name="AngularApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CafeteriaGP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CafeteriaGP" type="462c0819:PsiDirectoryNode" />
+              <item name="AngularApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CafeteriaGP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CafeteriaGP" type="462c0819:PsiDirectoryNode" />
+              <item name="AngularApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="trailer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CafeteriaGP" type="b2602c69:ProjectViewProjectNode" />
@@ -381,12 +393,12 @@
       <option name="presentableId" value="Default" />
       <updated>1551918515287</updated>
       <workItem from="1551918516488" duration="108060000" />
-      <workItem from="1552504727049" duration="43788000" />
+      <workItem from="1552504727049" duration="71437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151848000" />
+    <option name="totallyTimeSpent" value="179497000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,10 +414,10 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.50108933" side_tool="true" weight="0.19442166" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49673203" visible="true" weight="0.19442166" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49673203" visible="true" weight="0.19442166" />
       <window_info id="Structure" order="2" sideWeight="0.503268" side_tool="true" weight="0.19442166" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.329927" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -425,321 +437,12 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/models/diningroom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/diningroomController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/polyfills.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/test.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/assets/js/init/datatables-init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="26" column="49" lean-forward="true" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/assets/js/lib/data-table/datatables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/providerController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="58" column="36" selection-start-line="58" selection-start-column="36" selection-end-line="58" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/models/provider.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/category/category.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/providers.model.spec.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/providers.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-627">
-          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#161#167#0" expanded="true" />
-            <element signature="e#3562#3568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/providers/providers.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="35" selection-start-line="35" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/user.model.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/productController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="46" column="53" selection-start-line="46" selection-start-column="53" selection-end-line="46" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/models/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/models/order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/orderController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="21" selection-start-line="21" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NodeJS/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="19" column="9" lean-forward="true" selection-end-line="56" />
-          <folding>
-            <element signature="e#517#523#0" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" selection-start-line="46" selection-end-line="50" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-            <element signature="n#!!block;n#ngOnInit#0;n#OrderComponent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -750,17 +453,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html">
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="164" column="25" lean-forward="true" selection-start-line="164" selection-start-column="25" selection-end-line="164" selection-end-column="25" />
+        <state relative-caret-position="-8">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/authService.service.ts">
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/user.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="210">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/node_modules/ng-select2/lib/ng-select2.component.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/authorization.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" selection-start-line="11" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/providers.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/providerController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/approvedOrder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/admin/admin.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/provider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="32" column="40" lean-forward="true" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/passport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/unit.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/category/category.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/category.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/category.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="3" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -769,42 +592,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NodeJS/controllers/userController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="228">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/login.service.ts">
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/unit.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/unit.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="225">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.html">
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/product.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/product.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/maincafe/maincafe.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="40" column="166" selection-start-line="40" selection-start-column="166" selection-end-line="40" selection-end-column="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/trailer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="13" column="23" selection-end-line="65" />
+          <folding>
+            <element signature="e#517#523#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -812,17 +697,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.html">
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/trailerController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        <state relative-caret-position="277">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#687#693#0" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1911#1917#1" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#button#1;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/diningroom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" lean-forward="true" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/diningroomController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/product/product.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="60" column="8" selection-start-line="60" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/diningroom/diningroom.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="71" selection-start-line="71" selection-end-line="79" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/productController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/controllers/orderController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/diningroom.model.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NodeJS/models/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/order/order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/authorization/authorization.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="51" selection-start-line="51" selection-end-line="53" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/modelService/order.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AngularApp/src/app/components/trailer/trailer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#strong#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#strong#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1333#1339#0" expanded="true" />
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#button#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,8 +11,8 @@ var categoryController = require('./controllers/categoryController');
 var userController = require('./controllers/userController.js');
 var productController = require('./controllers/productController.js');
 var userTypeController = require('./controllers/userTypeController.js');
-
-
+var unitController = require('./controllers/unitController');
+var trailerController = require('./controllers/trailerController');
 const { mongoose } = require('./db.js');
 
 
@@ -54,4 +54,6 @@ app.use('/maincafe/providers', providerController);
 app.use('/maincafe/diningrooms', diningroomController);
 app.use('/maincafe/orders', orderController);
 app.use('/maincafe/authorization', orderController);
+app.use('/maincafe/units', unitController);
+app.use('/maincafe/trailers', trailerController);
 

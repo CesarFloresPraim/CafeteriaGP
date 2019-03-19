@@ -34,17 +34,13 @@
           <div class="form-group col-sm-12">
             <div class="input-group">
               <button type="button" class="btn btn-success" name="{{category.name}}" (click)="addRow($event.target)">+</button>&nbsp;
-              &nbsp;<ng-select2 [data]="sortedProduct" id="select-{{category.name}}"></ng-select2>
+              &nbsp;<ng-select2 (click)="fetchUnitsPerProduct($event)" [data]="sortedProduct" id="select-{{category.name}}"></ng-select2>
               <select class="form-control" id="selectUnit-{{category.name}}" name="unit">
-                <option value="kg">Kg</option>
-                <option value="can">Can</option>
-                <option value="bag">Bag</option>
+                <option value="{{un._id}}" *ngFor="let un of units">{{un.name}}</option>
               </select>
               <input type="text" placeholder="Quantity" id="quantity-{{category.name}}" name="quantity">
               <select class="form-control" id="selectProv-{{category.name}}" name="prov">
-                <option value="1">Provider 1</option>
-                <option value="2">Provider 2</option>
-                <option value="3">Provider 3</option>
+                <option value="{{prov._id}}" *ngFor="let prov of providers">{{prov.name}}</option>
               </select>
             </div>
             <div style="height: 10px; background-color: rgba(0, 168, 255,0.6);margin-top: 4px" ></div>
@@ -54,7 +50,7 @@
                 <th>Name</th>
                 <th>Unit</th>
                 <th>Quantity</th>
-                <th>provider</th>
+                <th>Provider</th>
                 <th>Actions</th>
               </tr>
               </thead>
@@ -63,7 +59,7 @@
                 <td>{{car.name}}</td>
                 <td>{{car.unit}}</td>
                 <td>{{car.quantity}}</td>
-                <td>{{car.provider_id}}</td>
+                <td>{{car.provider_name}}</td>
                 <td><button (click)="onRemove(car._id)" ><a><i class="fa fa-trash-o" style="color: red"></i></a></button></td>
               </tr>
               </tbody>

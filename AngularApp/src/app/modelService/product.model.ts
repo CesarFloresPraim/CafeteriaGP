@@ -4,4 +4,5 @@ export class Product {
   price: string;
   description: string;
   type: string;
+  unit: Array<any>;
 }

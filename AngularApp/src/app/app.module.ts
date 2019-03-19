@@ -17,6 +17,7 @@ import { NgSelect2Module } from 'ng-select2';
 import { Select2Module } from 'ng2-select2';
 import { AuthorizationComponent } from './components/authorization/authorization.component';
 import { LoginService } from './modelService/login.service';
+import { TrailerComponent } from './components/trailer/trailer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { LoginService } from './modelService/login.service';
     CategoryComponent,
     DiningroomComponent,
     OrderComponent,
-    AuthorizationComponent
+    AuthorizationComponent,
+    TrailerComponent
   ],
   imports: [
     BrowserModule,

@@ -20,13 +20,11 @@ router.post('/', (req, res) => {
         else { console.log('Error in dinning room Save :' + JSON.stringify(err, undefined, 2)); }
     });
 });
-//Route to get user
-router.get('/:name', (req, res) => {
-    DiningRoom.findOne({name: req.params.name }, (err, doc) => {
+//Route to get room
+router.get('/:_id', (req, res) => {
+    DiningRoom.findOne({_id: req.params._id }, (err, doc) => {
         if(doc){
-            res.send({
-                name: doc.name
-            });
+            res.send(doc);
         } else {
             console.log('Error retreiving dinning room: ' + JSON.stringify(err, undefined, 2));
             res.status(400).send('Wrong name');

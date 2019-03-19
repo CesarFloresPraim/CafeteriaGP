@@ -37,6 +37,9 @@
         <li class="menu-item-has-children dropdown">
           <a (click)="navigate('authorization')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-check"></i>Authorization</a>
         </li>
+        <li class="menu-item-has-children dropdown">
+          <a (click)="navigate('trailers')" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-truck"></i>Trailers</a>
+        </li>
         <li class="menu-title">Admin</li><!-- /.menu-title -->
 
         <li class="menu-item-has-children dropdown">
@@ -160,6 +163,7 @@
   <!-- Header-->
   <div class="content">
     <div class="animated fadeIn">
+      <flash-messages></flash-messages>
           <router-outlet></router-outlet>
     </div><!-- .animated -->
   </div><!-- .content -->
@@ -167,7 +171,6 @@
 
   <div class="clearfix"></div>
 
-  <flash-messages></flash-messages>
 </div><!-- /#right-panel -->
 
 <!-- Right Panel -->

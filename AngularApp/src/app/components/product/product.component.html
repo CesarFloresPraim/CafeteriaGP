@@ -27,6 +27,13 @@
         </div>
       </div>
       <br>
+      <p>Select units allowed for new product: </p>
+      <div class="input-group col-sm-12">
+        <div class="input-group col-sm-6 col-md-3"*ngFor="let unit of units">
+          <input type="checkbox" (click)="toggleSelection($event, unit)" name="{{unit.name}}" value="{{unit._id}}">{{unit.name}}
+        </div>
+      </div>
+      <br>
       <div class="form-actions form-group"><button type="submit" class="btn btn-success btn-sm">Submit</button></div>
 
     </form>
@@ -41,6 +48,7 @@
     <th>Description</th>
     <th>Price</th>
     <th>Category</th>
+    <th>Units</th>
     <th>Actions</th>
   </tr>
   </thead>
@@ -50,6 +58,7 @@
     <td>{{prod.description}}</td>
     <td>${{prod.price}}</td>
     <td>{{prod.type}}</td>
+    <td><div *ngFor="let un of prod.unit">{{un.name}},</div></td>
     <td><button (click)="onDelete(prod._id)" ><a><i class="fa fa-trash-o" style="color: red"></i></a></button>&nbsp;<button (click)="onUpdate(prod)"><a><i style="color: orange" class="fa fa-pencil"></i></a></button></td>
   </tr>
   </tbody>

@@ -1,3 +1,4 @@
+/*
 import { Component, OnInit } from '@angular/core';
 import { first } from 'rxjs/operators';
 
@@ -15,4 +16,4 @@ export class AdminComponent implements OnInit {
             this.users = users; 
         });
     }
-}
+}*/

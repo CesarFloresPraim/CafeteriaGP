@@ -8,7 +8,8 @@ import {Router} from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class DiningroomService {  readonly baseURL = 'http://localhost:3000/maincafe/diningrooms';
+export class DiningroomService {
+  readonly baseURL = 'http://localhost:3000/maincafe/diningrooms';
   constructor(private http: HttpClient) { }
 
   postRoom(diningRoom: Diningroom) {
@@ -16,6 +17,9 @@ export class DiningroomService {  readonly baseURL = 'http://localhost:3000/main
   }
   getRoomList() {
     return this.http.get(this.baseURL);
+  }
+  getRoom(_id: string) {
+    return this.http.get(this.baseURL + `/${_id}`);
   }
 
   putRoom(diningRoom: Diningroom) {

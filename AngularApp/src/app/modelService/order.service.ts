@@ -14,14 +14,16 @@ export class OrderService {
   postOrder(order: any) {
     return this.http.post(this.baseURL, order);
   }
-
   getOrderList() {
     return this.http.get(this.baseURL);
   }
-  putOrder(order: Order) {
-    return this.http.put(this.baseURL + `/${order._id}`, order);
+  putOrder(_id: string, approvedCart: Array<any>) {
+    return this.http.put(this.baseURL + `/${_id}`, approvedCart);
   }
+  getOrder(name: string) {
+    return this.http.get(this.baseURL + `/${name}`);
 
+  }
   deleteOrder(_id: string) {
     return this.http.delete(this.baseURL + `/${_id}`);
   }

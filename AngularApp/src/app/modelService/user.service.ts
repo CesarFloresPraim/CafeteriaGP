@@ -1,7 +1,8 @@
+/*
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { User } from '../modelService/user.model';
+import { User } from './user.model';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
@@ -14,4 +15,4 @@ export class UserService {
     getById(id: number) {
         return this.http.get<User>(`${config.apiUrl}/users/${id}`);
     }
-}
+}*/

@@ -7,4 +7,5 @@ export class Order {
   description: string;
   products: Array<Product>;
   dateTime: string;
+  approvedProducts: Array<any>;
 }

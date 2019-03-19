@@ -19,7 +19,9 @@ export class ProvidersService {
   getProviderList() {
     return this.http.get(this.baseURL);
   }
-
+  getProvider(_id: string) {
+    return this.http.get(this.baseURL + `/${_id}`);
+  }
   putProvider(provider: Providers) {
     return this.http.put(this.baseURL + `/${provider._id}`, provider);
   }

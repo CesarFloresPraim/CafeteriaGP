@@ -26,8 +26,8 @@ router.post('/', (req, res) => {
 //Route to get user for login
 router.post('/login', function(req, res, next){
     passport.authenticate('local', function(err, user, info) {
-        if (err) { return res.status(501).json(err); }
-        if (!user) { return res.status(501).json(info); }
+/*        if (err) { return res.status(501).json(err); }
+        if (!user) { return res.status(501).json(info); }*/
         req.logIn(user, function(err) {
           if (err) { return next(err); }
           //return res.redirect('/maincafe');
