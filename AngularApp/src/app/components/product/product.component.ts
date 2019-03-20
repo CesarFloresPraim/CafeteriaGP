@@ -36,7 +36,7 @@ export class ProductComponent implements OnInit {
     this.fetchProducts();
     this.categoryComponent.fetchCategories();
     this.fetchUnits();
-    // $('#bootstrap-data-table').DataTable();
+    //$('#bootstrap-data-table').DataTable();
 
   }
 

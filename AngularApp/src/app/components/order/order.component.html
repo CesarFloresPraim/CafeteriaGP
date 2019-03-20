@@ -6,9 +6,12 @@
         <form #orderForm="ngForm" (ngSubmit)="onSubmit(orderForm)" (keydown.enter)="$event.preventDefault()">
           <input type="hidden" name="_id" #_id_="ngModel" [(ngModel)]="_id">
           <div class="form-group">
-            <div class="input-group">
+            <div class="input-group col-xs-12 col-md-6">
               <div class="input-group-addon"><i class="fa fa-coffee"></i></div>
               <input type="text" id="droom" name="droom" placeholder="Dinning room" class="form-control "#_droom="ngModel" [(ngModel)]="droom">&nbsp;
+
+            </div>
+            <div class="input-group col-xs-12 col-md-6">
               <div class="input-group-addon"><i class="fa fa-font"></i></div>
               <input type="text" id="description" name="description" placeholder="Description" class="form-control" #_description="ngModel" [(ngModel)]="description">
             </div>
@@ -31,7 +34,7 @@
       <div class="card-header"><i class="fa fa-list-ul" style="color: skyblue"></i>&nbsp;{{category.name}}</div>
       <div class="card-body card-block" id="card_bo">
         <form #orderProductForm="ngForm" (ngSubmit)="onOrderProduct(orderProductForm)" (keydown.enter)="$event.preventDefault()">
-          <div class="form-group col-sm-12">
+          <div class="form-group col-md-12">
             <div class="input-group">
               <button type="button" class="btn btn-success" name="{{category.name}}" (click)="addRow($event.target)">+</button>&nbsp;
               &nbsp;<ng-select2 (click)="fetchUnitsPerProduct($event)" [data]="sortedProduct" id="select-{{category.name}}"></ng-select2>
